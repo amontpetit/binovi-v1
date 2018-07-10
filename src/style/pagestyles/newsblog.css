@@ -1,0 +1,41 @@
+/* NewsBlog */
+#blog{
+    padding-top:4px;
+}
+.blog-post{
+    width:50%;
+    padding:32px;
+    float:left;
+}
+.blog-card{
+    background-color:var(--eyc-white);
+    padding:32px;
+    border-radius:8px;
+    box-shadow: 0 16px 64px 0 var(--eyc-black25);
+}
+h4.blog-title,
+h4.blog-title a{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:0.5px;
+    margin-bottom:0;
+    color:var(--eyc-darkgrey);
+}
+.blog-title a:hover{
+    color:var(--eyc-teal);
+}
+.blog-excerpt{
+    padding:0 16px;
+}
+.blog-more{
+    text-align:right;
+}
+.blog-more a{
+    font-size:12px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:var(--eyc-midgrey);
+}
+.blog-more a:hover{
+    color:var(--eyc-teal);
+}

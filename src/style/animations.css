@@ -1,0 +1,6 @@
+.bobbing{animation:bobbing 6s infinite ease-in-out;}
+@keyframes bobbing{
+    0%{padding-top:64px;}
+    50%{padding-top:32px;}
+    100%{padding-top:64px;}
+}

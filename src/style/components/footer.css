@@ -1,0 +1,30 @@
+/* Footer */
+footer{
+    width:100%;
+    height:auto;
+    background-color:var(--eyc-verydarkgrey);
+    padding:32px 0 64px 0;
+    box-shadow: 0 -32px 128px 0 var(--eyc-black25);
+    border-bottom: 1px solid var(--eyc-midgrey);
+}
+footer h4{
+    color:var(--eyc-lightgrey);
+    font-size:16px;
+    font-weight:600;
+}
+.footer-column{
+    float:left;
+}
+#footer-nameplate{
+    width:30%;
+    text-align:left;
+}
+#footer-nameplate-logo{
+    margin-top:32px;
+    width:auto;
+    height:64px;
+}
+#footer-nameplate-logo img{
+    width:auto;
+    height:100%;
+}

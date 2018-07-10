@@ -1,0 +1,118 @@
+/* For Very Large Screens */
+@media only screen and (min-width:1600px)
+{
+    
+}
+/* For Large Screens */
+@media only screen and (min-width: 1440px)
+{
+    .container{
+        padding:0;
+    }
+}
+
+/* For Standard Desktop Screens */
+@media only screen and (min-width: 1200px)
+{
+
+}
+
+@media only screen and (max-width:1199px)
+{
+
+}
+
+@media only screen and (max-width:1099px)
+{
+
+}
+
+/* For iPad Horizontal */
+@media only screen and (max-width: 1024px)
+{
+    footer .mosaic-rule{
+        margin-top:32px;
+    }
+}
+
+/* 900px */
+@media only screen and (max-width: 900px)
+{
+
+}
+
+/* 899px Size limit for header navigation */
+@media only screen and (max-width:899px)
+{
+    #header-logo,
+    #header-navigation{
+        padding:0 32px;
+    }
+    .header-navigation-listitem{
+        padding:0 12px;
+    }
+    .header-navigation-listitem::after{
+        padding:0 12px;
+        margin-left:-12px;
+    }
+}
+
+/* For iPad Vertical */
+@media only screen and (max-width: 768px)
+{
+    #header-navigation{
+        display:none;
+    }
+    #header-navigation-small{
+        display:block;
+    }
+}
+
+@media only screen and (max-width:728px)
+{
+    .cta::before{
+        max-width:calc(100% - 128px);
+    }
+}
+
+@media only screen and (max-width:699px)
+{
+    
+}
+
+/* For Small Screens */
+@media only screen and (max-width: 600px)
+{
+    #header-navigation-list-small{
+        width:calc(100% - 64px);
+    }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 480px)
+{
+    #contactform-intro-paragraph{
+        width:100%;
+        padding-right:0;
+    }
+    #contactform-intro-lists{
+        width:100%;
+        padding-left:0;
+        text-align: center;
+    }
+    #contactform-intro-lists .sociallistsmall li{
+        margin:20px 10px;
+    }
+}
+
+/* For iOS */
+@media only screen and (max-width: 375px)
+{
+
+}
+
+/* For Android */
+@media only screen and (max-width: 480px)
+{
+
+}

@@ -1,0 +1,210 @@
+/* Home */
+#home{
+}
+.home-card-titleblock{
+    width:40%;
+    float:left;
+    padding:0 16px;
+}
+.home-card-contentblock{
+    width:60%;
+    float:left;
+    padding:0 16px;
+}
+.home-card-title{
+    padding:0;
+    margin:0;
+}
+#home-hero-content{
+    position:relative;
+    width:calc(100% - 128px);
+    height:550px;
+    background-color:var(--eyc-verydarkgrey);
+    background-image: url(/images/webassets/EYCv2_Background_Shaded_2000_blurLeft.png);
+    background-size:100%;
+    background-position:center center;
+    float:left;
+    box-shadow: inset 0 0 40px 0 var(--eyc-black50);
+}
+#home-hero-content-inner{
+    width:50%;
+    position:absolute;
+    top:0;
+    left:0;
+    padding:32px 32px 0 64px;
+}
+#home-hero-content-inner h2{
+    font-size:48px;
+    font-weight:400;
+    text-transform: none;
+}
+#home-hero-content-inner p{
+    font-size:24px;
+    font-weight:400;
+}
+#home-hero-content-inner *:not(button){
+    color:var(--eyc-white) !important;
+}
+#home-hero-content h1{
+    position: absolute;
+    bottom:0;
+    left:64px;
+    color:var(--eyc-white);
+    font-size:128px;
+    font-weight:600;
+    margin:0 0 -64px 0;
+}
+#home-hero-content-inner h2,
+#home-hero-content-inner p,
+#home-hero-content h1{
+    text-shadow: 0 4px 16px var(--eyc-black25);
+}
+#home-hero-slider{
+    position: relative;
+    left:50%;
+    width:50%;
+    height:732px;
+    padding-top:64px;
+    overflow:hidden;
+    white-space: nowrap;
+}
+#home-hero-slider img{
+    width:100%;
+    height:600px;
+    object-fit:contain;
+    display:inline-block;
+    filter:drop-shadow(0 8px 32px var(--eyc-black10));
+}
+#home-hero-slider-frames{
+    position: relative;
+    top:0;
+    left:0;
+    transition-duration: 200ms;
+}
+#home-hero-slider-frames.frame0{
+    left:0;
+}
+#home-hero-slider-frames.frame1{
+    left:-100%;
+}
+#home-hero-slider-frames.frame2{
+    left:-200%;
+}
+#home-hero-slider-frames.frame3{
+    left:-300%;
+}
+#home-hero-subcontent{
+    width:128px;
+    height:732px;
+    float:left;
+    clear:right;
+}
+#home-hero-subcontent-productname{
+    position: relative;
+    top:120px;
+    left:-302px;
+    width:732px;
+    height:128px;
+    transform:rotate(-90deg);
+    text-align:center;
+    line-height:128px;
+    font-weight:400;
+    font-size:40px;
+    padding-right:184px;
+}
+#home-hero-intro{
+    margin-bottom:64px;
+}
+#home-hero-intro-deck{
+    width:33%;
+    padding:0 16px 0 0;
+    float:left;
+}
+#home-hero-intro-content{
+    width:67%;
+    padding:12px 0 0 16px;
+    float:left;
+}
+.home-overview-image{
+    width:25%;
+    float:left;
+    overflow: hidden;
+}
+.home-overview-image img{
+    width:auto;
+    height:400px;
+    object-fit: scale-down;
+}
+.home-overview-content{
+    width:50%;
+    padding:0 16px;
+    float:left;
+}
+.home-overview-content-half{
+    width:50%;
+    float:left;
+}
+.home-overview-content-half button{
+    margin:0 auto;
+}
+.home-overview-content-half:first-of-type{
+    padding-right:16px;
+}
+.home-overview-content-half:last-of-type{
+    padding-left:16px;
+}
+#home-overview-pro,
+#home-overview-touch{
+    padding-right:16px;
+}
+#home-overview-coach,
+#home-overview-kit{
+    padding-left:16px;
+}
+#home-overview-pro img,
+#home-overview-touch img{
+    float:right;
+}
+#home-overview-coach img,
+#home-overview-kit img{
+    float:left;
+}
+#home-overview-cta{
+    padding:64px 0 !important;
+}
+#home-overview-card{
+    padding:0;
+}
+#home-overview-intro{
+    width:100%;
+    float:left;
+    text-align:center;
+    padding:0 16px 0 64px;
+}
+#home-overview-button{
+    padding-top:16px;
+    text-align: center;
+}
+#home-webinar{
+    padding:48px !important;
+}
+#home-webinar-card{
+    padding:0;
+}
+#home-webinar-intro{
+    width:calc(100% - 700px);
+    float:left;
+    padding:0 16px 0 64px;
+}
+#home-webinar-button{
+    padding-top:16px;
+    text-align: center;
+}
+#home-webinar-video{
+    width:600px;
+    height:360px;
+    float:right;
+    padding-top:0;
+    border-radius:0 8px 8px 0;
+    background-color:var(--eyc-lightgrey);
+}

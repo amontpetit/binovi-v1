@@ -1,0 +1,44 @@
+#binovi-intro{
+    padding:64px 0 0 0 !important;
+}
+#binovi-intro .container{
+    filter:drop-shadow(0 8px 32px var(--eyc-black75));
+}
+.binovi-intro-block{
+    position:relative;
+    float:left;
+    width:33%;
+    height:400px;
+    /* text-align:center; */
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    background-color:var(--eyc-black);
+}
+.binovi-intro-block img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0.5;
+    transition-duration:400ms;
+}
+.binovi-intro-block:hover img{
+    opacity:1;
+}
+.binovi-intro-block h2{
+    position:absolute;
+    width:100%;
+    left:-16px;
+    bottom:16px;
+    margin:0 auto;
+    text-align:center;
+    font-size:32px;
+    text-shadow: 0 4px 16px var(--eyc-black25);
+    color: var(--eyc-white) !important;
+    transition-duration:400ms;
+}
+.binovi-intro-block:hover h2{
+    bottom:-32px;
+    left:0;
+    filter:blur(32px);
+    opacity:0;
+}

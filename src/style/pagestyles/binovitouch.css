@@ -1,0 +1,153 @@
+/* Binovi Pro */
+#binovi-touch-hero-left{
+    width:50%;
+    padding-top:64px;
+    padding-left:64px;
+    margin-bottom:-196px;
+    float:left;
+}
+#binovi-touch-hero-left img{
+    width:100%;
+    object-fit: contain;
+}
+#binovi-touch-hero-right{
+    width:50%;
+    padding-right:64px;
+    padding-left:64px;
+    float:left;
+}
+#binovi-touch-content-area{
+    width:calc(100% - 832px);
+    padding:64px;
+    float:left;
+}
+.binovi-touch-content-block{
+    display:none;
+    opacity:0;
+    filter:blur(32px);
+}
+.binovi-touch-content-block.block{
+    display:block;
+}
+.binovi-touch-content-block.active{
+    opacity:1;
+    filter:none;
+}
+#binovi-touch-controls{
+    width:128px; 
+    padding-top:128px;
+    float:left;
+}
+.binovi-touch-slider-controls-button{
+    width:64px;
+    height:64px;
+    margin:64px auto;
+    border-radius:32px;
+    text-align: center;
+    background-color:transparent;
+    box-shadow:0 4px 64px 0 var(--eyc-black50);
+    border:1px solid var(--eyc-lightgrey);
+    z-index: 999;
+}
+.binovi-touch-slider-controls-button:hover{
+    background-color:var(--eyc-white);
+    box-shadow: 0 4px 64px 0 var(--eyc-black75);
+    cursor: pointer;
+    backdrop-filter: blur(32px);
+}
+.binovi-touch-slider-controls-button:hover i{
+    color:var(--eyc-darkgrey) !important;
+}
+.binovi-touch-slider-controls-button i{
+    color:var(--eyc-midgrey) !important;
+    line-height: 60px;
+    font-size:48px;
+}
+#btsc-prev{
+    left:64px;
+}
+#btsc-prev i{
+    margin-left:-4px;
+}
+#btsc-prev:hover i{
+    margin-left:-24px;
+}
+#btsc-next{
+    right:64px;
+}
+#btsc-next i{
+    margin-left:4px;
+}
+#btsc-next:hover i{
+    margin-left:24px;
+}
+
+#binovi-touch-image-area{
+    width:704px;
+    height:640px;
+    margin-top:0;
+    padding:0;
+    float:left;
+    background-image: url(https://www.eyecarrot.com/wp-content/uploads/sf-flat-e1495051585566.png);
+    background-size: auto 99%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition-duration:500ms !important;
+}
+
+#binovi-touch-image-area.block-0{
+    background-size: auto 99%;
+    background-position: 50% 50%;
+    /* border:1px solid white; */
+}
+#binovi-touch-image-area.block-1{
+    background-size: auto 200%;
+    background-position: 0% 0%;
+    /* border:1px solid red; */
+}
+#binovi-touch-image-area.block-2{
+    background-size: auto 200%;
+    background-position: 110% 100%;
+    /* border:1px solid green; */
+}
+#binovi-touch-image-area.block-3{
+    background-size: auto 99%;
+    background-position: 50% 0%;
+    /* border:1px solid blue; */
+}
+#binovi-touch-image-area.block-4{
+    background-size: auto 200%;
+    background-position: 110% 100%;
+    /* border:1px solid orange; */
+}
+#binovi-touch-action-video{
+    width:100%;
+    height:600px;
+    margin-bottom:64px;
+    background-color:var(--eyc-lightgrey);
+    box-shadow: 0 32px 128px 0 var(--eyc-black25);
+}
+
+#binovi-touch-cta{
+    padding:48px !important;
+}
+#binovi-touch-cta-card{
+    padding:0;
+}
+#binovi-touch-cta-intro{
+    width:calc(100% - 700px);
+    float:left;
+    padding:0 16px 0 64px;
+}
+#binovi-touch-cta-button{
+    padding-top:16px;
+    text-align: center;
+}
+#binovi-touch-cta-image{
+    width:600px;
+    height:360px;
+    float:right;
+    padding-top:0;
+    border-radius:0 8px 8px 0;
+    background-color:var(--eyc-lightgrey);
+}
