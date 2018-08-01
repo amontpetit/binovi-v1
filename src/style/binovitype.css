@@ -12,42 +12,40 @@
     font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
     color:var(--eyc-darkgrey);
     font-weight:300;
-    line-height: 1.75em;
-    font-size:18px;
+    line-height: 1.5em;
+    font-size:16px;
 }
 
 /* Headings */
-h1.maintitle{
-    font-size:72px;
-    font-weight:300;
-}
-h2{
-    font-size:18px;
-    font-weight:600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-h2.title{
+h1.title-main{
     font-size:48px;
-    font-weight:300;
-    text-transform: none;
-    letter-spacing: normal;
+    line-height:56px;
+    font-weight:400;
 }
-h2.smalltitle{
-    font-weight:300;
-	font-size:32px;
+h2.title-secondary{
+    font-size:40px;
+    font-weight:400;
+    line-height: 64px;
     text-transform: none;
     letter-spacing: normal;
-    margin-bottom:20px;
+    margin:0;
+}
+h2.title-tertiary{
+    font-weight:400;
+    font-size:32px;
+    line-height: 40px;
+    text-transform: none;
+    letter-spacing: normal;
 }
 h2.blogtitle{
     margin-bottom:25px;
 }
 h3{
-    font-size:15px;
+    font-size:16px;
     font-weight:600;
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 24px;
 }
 h4{
     font-size:18px;
@@ -64,9 +62,10 @@ h4.footer-title{
 
 /* Body Copy */
 p{
-    font-size:18px;
-    line-height:1.75em;
+    font-size:16px;
+    line-height:24px;
     font-weight:300;
+    margin-bottom:16px;
 }
 p.tiny{
     font-size:10px;
@@ -75,9 +74,10 @@ p.tiny{
     letter-spacing: 1px;
     color:#888;
 }
-p.big{
+p.deck{
     font-size:24px;
-    margin-bottom:1em;
+    line-height:32px;
+    margin-bottom:32px;
 }
 
 /* Links */

@@ -1,10 +1,10 @@
 .case-study-wrapper{
     position:relative;
     float:left;
-    width:33%;
+    width:50%;
     height:300px;
     /* text-align:center; */
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0 1.5vw, 100% 0%, 100% calc(100% - 1.5vw), 0% 100%);
     background-color:var(--eyc-black);
 }
 .case-study-wrapper img{

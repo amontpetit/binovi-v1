@@ -95,87 +95,88 @@ class BinoviPro extends React.Component{
     render(){
         return(
         <div className="page-content" id="binovi-pro">
-            <section className="lightbg">
-                <div id="binovi-pro-hero-left">
-                    <h1 className="maintitle">Binovi Pro</h1>
-                    <p className="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. </p>
-                    <div className="cta light">
-                        <button className="btn-cta">Sign up now!</button>
+            <section>
+                <div id="binovi-pro-hero">
+                    <div id="binovi-pro-hero-left">
+                        <h1 className="title-main">Binovi Pro</h1>
+                        <p className="deck">The control center of the Binovi platform, enabling you to manage your patients and their vision care programs.</p>
+                        <div className="cta light">
+                            <button className="btn-cta">Sign up now!</button>
+                        </div>
+                    </div>
+                    <div id="binovi-pro-hero-right">
+                        <img className="fit shadow-product" src="https://www.eyecarrot.com/wp-content/uploads/MobileProductHero.png"/>
                     </div>
                 </div>
-                <div id="binovi-pro-hero-right">
-                    <img className="fit" src="https://www.eyecarrot.com/wp-content/uploads/MobileProductHero.png"/>
+                <div className="polygon reverse lightbg" id="binovi-pro-sliderblock">
+                    <h2 className="title-secondary center">Explore Binovi Pro</h2>
+                    <div id="binovi-pro-slider-images">
+                        <div id="binovi-pro-slider-images-wrapper">
+                            <div className="binovi-pro-slider-images-item" id="bpsi-1">
+                                <img className="fit shadow-product" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
+                            </div>
+                            <div className="binovi-pro-slider-images-item" id="bpsi-2">
+                                <img className="fit shadow-product" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
+                            </div>
+                            <div className="binovi-pro-slider-images-item" id="bpsi-3">
+                                <img className="fit shadow-product" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
+                            </div>
+                            <div className="binovi-pro-slider-images-item" id="bpsi-4">
+                                <img className="fit shadow-product" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="binovi-pro-slider-controls-wrapper">
+                        <div id="binovi-pro-slider-controls">
+                            <button className="binovi-pro-slider-controls-button" id="bpsc-left" onClick={(e) => this.bpsc('previous', this.updateInfo)}><i className="fa fa-angle-left"></i></button>
+                            <button className="binovi-pro-slider-controls-button" id="bpsc-right" onClick={(e) => this.bpsc('next', this.updateInfo)}><i className="fa fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    <div id="binovi-pro-slider-content">
+                        <div id="binovi-pro-slider-content-item-wrapper">
+                            <div className="binovi-pro-slider-content-item active" id="bpsc-content-1">
+                                <div className="binovi-pro-slider-content-item-title">
+                                    <h3>My Feature Name</h3>
+                                </div>
+                                <div className="binovi-pro-slider-content-item-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
+                                </div>
+                            </div>
+                            <div className="binovi-pro-slider-content-item" id="bpsc-content-2">
+                                <div className="binovi-pro-slider-content-item-title">
+                                    <h3>My Feature Name</h3>
+                                </div>
+                                <div className="binovi-pro-slider-content-item-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
+                                </div>
+                            </div>
+                            <div className="binovi-pro-slider-content-item" id="bpsc-content-3">
+                                <div className="binovi-pro-slider-content-item-title">
+                                    <h3>My Feature Name</h3>
+                                </div>
+                                <div className="binovi-pro-slider-content-item-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
+                                </div>
+                            </div>
+                            <div className="binovi-pro-slider-content-item" id="bpsc-content-4">
+                                <div className="binovi-pro-slider-content-item-title">
+                                    <h3>My Feature Name</h3>
+                                </div>
+                                <div className="binovi-pro-slider-content-item-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section className="darkbg">
-                <h2 className="title center space-top-huge">Explore Binovi Pro</h2>
-                <div id="binovi-pro-slider-images">
-                    <div id="binovi-pro-slider-images-wrapper">
-                        <div className="binovi-pro-slider-images-item" id="bpsi-1">
-                            <img className="fit" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
-                        </div>
-                        <div className="binovi-pro-slider-images-item" id="bpsi-2">
-                            <img className="fit" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
-                        </div>
-                        <div className="binovi-pro-slider-images-item" id="bpsi-3">
-                            <img className="fit" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
-                        </div>
-                        <div className="binovi-pro-slider-images-item" id="bpsi-4">
-                            <img className="fit" src="https://www.eyecarrot.com/wp-content/uploads/TouchApp_TestSelect.png"/>
-                        </div>
-                    </div>
-                </div>
-                <div id="binovi-pro-slider-controls-wrapper">
-                    <div id="binovi-pro-slider-controls">
-                        <button className="binovi-pro-slider-controls-button" id="bpsc-left" onClick={(e) => this.bpsc('previous', this.updateInfo)}><i className="fa fa-angle-left"></i></button>
-                        <button className="binovi-pro-slider-controls-button" id="bpsc-right" onClick={(e) => this.bpsc('next', this.updateInfo)}><i className="fa fa-angle-right"></i></button>
-                    </div>
-                </div>
-                <div id="binovi-pro-slider-content">
-                    <div id="binovi-pro-slider-content-item-wrapper">
-                        <div className="binovi-pro-slider-content-item active" id="bpsc-content-1">
-                            <div className="binovi-pro-slider-content-item-title">
-                                <h2>My Feature Name</h2>
-                            </div>
-                            <div className="binovi-pro-slider-content-item-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
-                            </div>
-                        </div>
-                        <div className="binovi-pro-slider-content-item" id="bpsc-content-2">
-                        <div className="binovi-pro-slider-content-item-title">
-                                <h2>My Feature Name</h2>
-                            </div>
-                            <div className="binovi-pro-slider-content-item-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
-                            </div>
-                        </div>
-                        <div className="binovi-pro-slider-content-item" id="bpsc-content-3">
-                        <div className="binovi-pro-slider-content-item-title">
-                                <h2>My Feature Name</h2>
-                            </div>
-                            <div className="binovi-pro-slider-content-item-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
-                            </div>
-                        </div>
-                        <div className="binovi-pro-slider-content-item" id="bpsc-content-4">
-                        <div className="binovi-pro-slider-content-item-title">
-                                <h2>My Feature Name</h2>
-                            </div>
-                            <div className="binovi-pro-slider-content-item-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. Praesent eget risus eros. Aliquam blandit aliquam lectus. Curabitur tempor, urna ac vestibulum viverra, justo quam placerat nisl, eget porta ante dui ut enim. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <MosaicBand/>
-            <section className="darkbg">
+            <section id="binovi-admin-block">
                 <div id="binovi-admin-image">
                     <img src="https://www.eyecarrot.com/wp-content/uploads/BinoviAdmin_Hero-2.png"/>
                 </div>
                 <div id="binovi-admin-description">
-                    <h2 className="title">Total Control with Binovi Admin</h2>
-                    <p className="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+                    <h2 className="title-secondary">Total Control with Binovi Admin</h2>
+                    <p className="deck">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. </p>
                 </div>
             </section>

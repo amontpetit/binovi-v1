@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import MosaicDivider from '../components/mosaicdivider.js'
 import MosaicBand from '../components/mosaicband.js';
 import MosaicCTASection from '../components/mosaicctasection.js';
+import StaticTestimonial from '../components/testimonial-static.js';
 
 class BinoviTouch extends React.Component{
     constructor(props){
@@ -94,46 +95,69 @@ class BinoviTouch extends React.Component{
     render(){
         return(
         <div className="page-content" id="binovi-touch">
-            <section className="lightbg">
+            <section id="binovi-touch-hero">
                 <div id="binovi-touch-hero-left">
-                    <img className="fit" src="https://www.eyecarrot.com/wp-content/uploads/sf-flat-e1495051585566.png"/>
+                    <img className="shadow-product fit" src="https://www.eyecarrot.com/wp-content/uploads/sf-flat-e1495051585566.png"/>
                 </div>
                 <div id="binovi-touch-hero-right">
-                    <h1 className="maintitle">Binovi Touch</h1>
-                    <p className="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. </p>
+                    <h1 className="title-main">Binovi Touch</h1>
+                    <p className="deck">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu. </p>
                     <div className="cta light">
                         <button className="btn-cta">Get Yours Today!</button>
                     </div>
                 </div>
             </section>
-            <section className="darkbg">
-                <div id="binovi-touch-content-area">
-                    <h2 className="title">Explore Binovi Touch</h2>
-                    <div className="binovi-touch-content-block" id="block-0">
-                        <p>Block 0 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+            <section id="binovi-touch-content-wrapper">
+                <div className="polygon-flat lightbg" id="binovi-touch-content">
+                    <div id="binovi-touch-content-area">
+                        <h2 className="title-secondary">Explore Binovi Touch</h2>
+                        <div className="binovi-touch-content-block" id="block-0">
+                            <div className="binovi-touch-content-title">
+                                <h3>My Feature Name (0)</h3>
+                            </div>
+                            <p>Block 0 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+                        </div>
+                        <div className="binovi-touch-content-block" id="block-1">
+                            <div className="binovi-touch-content-title">
+                                <h3>My Feature Name (1)</h3>
+                            </div>
+                            <p>Block 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+                        </div>
+                        <div className="binovi-touch-content-block" id="block-2">
+                            <div className="binovi-touch-content-title">
+                                <h3>My Feature Name (2)</h3>
+                            </div>
+                            <p>Block 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+                        </div>
+                        <div className="binovi-touch-content-block" id="block-3">
+                            <div className="binovi-touch-content-title">
+                                <h3>My Feature Name (3)</h3>
+                            </div>
+                            <p>Block 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+                        </div>
+                        <div className="binovi-touch-content-block" id="block-4">
+                            <div className="binovi-touch-content-title">
+                                <h3>My Feature Name (4)</h3>
+                            </div>
+                            <p>Block 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+                        </div>
                     </div>
-                    <div className="binovi-touch-content-block" id="block-1">
-                        <p>Block 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
+                    <div id="binovi-touch-controls">
+                        <div className="binovi-touch-slider-controls-button" id="btsc-prev" onClick={(e) => this.btsc('previous', this.updateInfo)}><i className="fa fa-angle-left"></i></div>
+                        <div className="binovi-touch-slider-controls-button" id="btsc-next" onClick={(e) => this.btsc('next', this.updateInfo)}><i className="fa fa-angle-right"></i></div>
                     </div>
-                    <div className="binovi-touch-content-block" id="block-2">
-                        <p>Block 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
-                    </div>
-                    <div className="binovi-touch-content-block" id="block-3">
-                        <p>Block 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
-                    </div>
-                    <div className="binovi-touch-content-block" id="block-4">
-                        <p>Block 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus suscipit ipsum vel mattis. Donec ante orci, vulputate et congue condimentum, luctus id ipsum. Nulla quam lorem, gravida id purus dapibus, pretium pulvinar arcu.</p>
-                    </div>
+                    <div id="binovi-touch-image-area"></div>
+                    <div className="gradientbreak"></div>
                 </div>
-                <div id="binovi-touch-controls">
-                    <div className="binovi-touch-slider-controls-button" id="btsc-prev" onClick={(e) => this.btsc('previous', this.updateInfo)}><i className="fa fa-angle-left"></i></div>
-                    <div className="binovi-touch-slider-controls-button" id="btsc-next" onClick={(e) => this.btsc('next', this.updateInfo)}><i className="fa fa-angle-right"></i></div>
-                </div>
-                <div id="binovi-touch-image-area"></div>
             </section>
-            <section className="lightbg">
+            <StaticTestimonial 
+                imageAsset="/images/testimonials/sample-kickboxing.jpg"
+                quote="This is a quote from an important person about our product/service. Short, sweet and persuasive!" 
+                source="The person that said the thing"
+            />
+            <section id="binovi-touch-video">
                 <div className="container">
-                    <h2 className="title center">Binovi Touch in Action</h2>
+                    <h2 className="title-secondary center">Binovi Touch in Action</h2>
                     <div id="binovi-touch-action-video"></div>
                 </div>
             </section>

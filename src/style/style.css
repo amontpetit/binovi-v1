@@ -18,6 +18,7 @@
 /* Page Styles */
 @import url("pagestyles/home.css");
 @import url("pagestyles/binovipro.css");
+@import url("pagestyles/binovicoach.css");
 @import url("pagestyles/binovitouch.css");
 @import url("pagestyles/contact.css");
 @import url("pagestyles/industries.css");
@@ -51,7 +52,7 @@ body{
     padding:0;
 }
 section{
-    padding:64px 0;
+    /* padding:64px 0; */
 }
 section:first-of-type{
     padding-top:0 !important;
@@ -81,19 +82,20 @@ section.mosaic{
     color:var(--eyc-white) !important;
 }
 .lightbg{
-    background-color:var(--eyc-white);
+    background-color:var(--eyc-verylightgrey);
     background-image: url(/images/webassets/noisy25-light.png);
 }
-
 .card{
-    width:calc(100% - 64px);
+    width:100%;
     height:auto;
     float:none;
     margin:0 auto;
-    border-radius:8px;
     background-color:var(--eyc-white);
     box-shadow: 0 32px 128px 0 var(--eyc-black25);
     padding:32px 16px 72px 16px;
+}
+.noshadow{
+    box-shadow: none !important;
 }
 .contentblock{
     width:100%;

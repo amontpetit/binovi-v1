@@ -14,20 +14,32 @@ import Rehabilitation from '../assets/home-rehab.jpg'
 const Industries = ({data}) => {
   return(
     <div className="page-content" id="industries">
-      <section className="darkbg">
+      <section className="">
         <div className="container" id="industries-intro">
-          <h1 className="maintitle space-top-none space-bottom-none center">Who Uses Binovi?</h1>
+          <div id="industries-title">
+            <h1 className="title-main">Who Uses Binovi?</h1>
+          </div>
+          <img className="fit" src="/images/binovi/BinoviMasterHero.png"/>
         </div>
-        <BinoviIntro 
-          title1="Performance"
-          image1={Performance} 
-          title2="Development" 
-          image2={Development} 
-          title3="Rehabilitation" 
-          image3={Rehabilitation} 
-        />
       </section>
-      <MosaicBand />
+      <section id="industries-performance">
+        <div className="polygon reverse darkbg">
+          <div className="industries-halfwidth">
+            <h1 className="title-main">Performance</h1>
+            <p className="deck">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere tortor diam, eu maximus erat commodo vitae. Nulla lobortis, diam at suscipit blandit, leo sapien aliquam quam, eu dapibus nulla.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere tortor diam, eu maximus erat commodo vitae. Nulla lobortis, diam at suscipit blandit, leo sapien aliquam quam, eu dapibus nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere tortor diam, eu maximus erat commodo vitae. Nulla lobortis, diam at suscipit blandit, leo sapien aliquam quam.</p>
+          </div>
+          <div className="industries-halfwidth">
+            <div className="industries-case-studies">
+              {data.PerformanceCS.edges.map(({node}) => (
+                  <Link to={node.fields.slug}>
+                    <CaseStudy data={node} />
+                  </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="darkbg industries-block">
         <div>
           <div className="industries-block-content">
@@ -47,7 +59,6 @@ const Industries = ({data}) => {
           </div>
         </div>
       </section>
-      <MosaicBand />
       <section className="lightbg industries-block">
         <div>
           <div className="industries-block-content">
@@ -87,11 +98,7 @@ const Industries = ({data}) => {
           </div>
         </div>
       </section>
-      <section className="mosaic">
-        <div className="card">
-          <ContactForm formId="addd572d-0fb7-4d20-b503-fee7cfce8b97"/>
-        </div>
-      </section>
+      <ContactForm formId="addd572d-0fb7-4d20-b503-fee7cfce8b97"/>
     </div>
   )
 }

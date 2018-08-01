@@ -1,5 +1,23 @@
 #industries-intro{
-    padding-top:64px;
+    padding-top:0;
+    position: relative;
+    height:600px;
+}
+#industries-intro img{
+    position: absolute;
+    top:32px;
+}
+#industries-title{
+    width:50%;
+    padding: 16px 64px;
+}
+#industries-title h1.title-main{
+    font-size:64px;
+    line-height:72px;
+}
+.industries-halfwidth{
+    width:50%;
+    float:left;
 }
 .industries-block{
     padding:0;

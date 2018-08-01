@@ -1,0 +1,166 @@
+/* Binovi Pro */
+#binovi-coach-hero{
+    padding-top:32px !important;
+}
+#binovi-coach-hero-left{
+    width:50%;
+    height:512px;
+    padding-top:64px;
+    padding-left:0;
+    margin-bottom:-192px;
+    float:left;
+}
+#binovi-coach-hero-left-images{
+    width:100%;
+    height: 100%;
+    position:relative;
+    z-index:999;
+}
+#binovi-coach-hero-left-images img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+#binovi-coach-hero-left img:nth-of-type(1){
+    left:-10%;
+    top:-5%;
+}
+#binovi-coach-hero-left img:nth-of-type(2){
+    left:5%;
+    top:0%;
+}
+#binovi-coach-hero-left img:nth-of-type(3){
+    left:20%;
+    top:5%;
+}
+#binovi-coach-hero-right{
+    width:50%;
+    padding-right:64px;
+    padding-left:64px;
+    float:left;
+}
+#binovi-coach-content{
+    padding-top:128px;
+    padding-bottom:64px;
+    position: relative;
+}
+#binovi-coach-content-area{
+    width:50%;
+    padding:64px;
+    float:left;
+}
+.binovi-coach-content-block{
+    display:none;
+    opacity:0;
+    filter:blur(32px);
+    /* transition-duration:500ms !important; */
+}
+.binovi-coach-content-block.block{
+    display:block;
+}
+.binovi-coach-content-block.active{
+    opacity:1;
+    filter:none;
+}
+.binovi-coach-controls{
+    width:128px; 
+    padding-top:288px;
+    float:left;
+}
+.binovi-coach-slider-controls-button{
+    width:64px;
+    height:64px;
+    margin:64px auto;
+    border-radius:32px;
+    text-align: center;
+    background-color:transparent;
+    border:1px solid var(--eyc-midgrey);
+    z-index: 999;
+}
+.binovi-coach-slider-controls-button:hover{
+    /* background-color:var(--eyc-white); */
+    border:1px solid var(--eyc-darkgrey);
+    box-shadow: 0 4px 64px 0 var(--eyc-black15);
+    cursor: pointer;
+    backdrop-filter: blur(32px);
+}
+.binovi-coach-slider-controls-button:hover i{
+    color:var(--eyc-darkgrey) !important;
+}
+.binovi-coach-slider-controls-button i{
+    color:var(--eyc-midgrey) !important;
+    line-height: 60px;
+    font-size:48px;
+}
+#bcsc-prev{
+    left:32px;
+}
+#bcsc-prev i{
+    margin-left:-4px;
+}
+#bcsc-prev:hover i{
+    margin-left:-24px;
+}
+#bcsc-next{
+    right:32px;
+}
+#bcsc-next i{
+    margin-left:4px;
+}
+#bcsc-next:hover i{
+    margin-left:24px;
+}
+
+#binovi-coach-image-area{
+    position: relative;
+    width:calc(50% - 256px);
+    height:768px;
+    margin-top:0;
+    padding:0;
+    float:left;
+}
+.binovi-coach-image-item{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    filter:blur(32px);
+    opacity:0;
+    transition-duration:500ms !important;
+}
+.binovi-coach-image-item.active{
+    filter:none;
+    opacity:1;
+}
+#binovi-coach-action-video{
+    width:100%;
+    height:600px;
+    margin-bottom:64px;
+    background-color:var(--eyc-lightgrey);
+    box-shadow: 0 32px 128px 0 var(--eyc-black25);
+}
+
+#binovi-coach-cta{
+    padding:48px !important;
+}
+#binovi-coach-cta-card{
+    padding:0;
+}
+#binovi-coach-cta-intro{
+    width:calc(100% - 700px);
+    float:left;
+    padding:0 16px 0 64px;
+}
+#binovi-coach-cta-button{
+    padding-top:16px;
+    text-align: center;
+}
+#binovi-coach-cta-image{
+    width:600px;
+    height:360px;
+    float:right;
+    padding-top:0;
+    border-radius:0 8px 8px 0;
+    background-color:var(--eyc-lightgrey);
+}

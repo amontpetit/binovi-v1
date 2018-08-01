@@ -30,9 +30,9 @@ class Header extends React.Component {
               </ul>
           </div>
           <Link to="/industries" className="header-navigation-listitem">Who Uses Binovi?</Link>
-          <Link to="/getbinovi" className="header-navigation-listitem">Get Binovi</Link>
-          <Link to="/news" className="header-navigation-listitem">News + Blog</Link>
           <Link to="/pricing" className="header-navigation-listitem">Pricing</Link>
+          <Link to="/news" className="header-navigation-listitem">News + Blog</Link>
+          <Link to="/getbinovi" className="header-navigation-listitem">Get Binovi</Link>
           <Link to="/providers" className="header-navigation-listitem">Providers</Link>
           <Link to="/contact" className="header-navigation-listitem">Contact Us</Link>
         </div>
@@ -43,9 +43,9 @@ class Header extends React.Component {
           <ul id="header-navigation-list-small">
             <Link to="/products"><li className="header-navigation-listitem-small">Products</li></Link>
             <Link to="/industries"><li className="header-navigation-listitem-small">Who Uses Binovi?</li></Link>
-            <Link to="/getbinovi"><li className="header-navigation-listitem-small">Get Binovi</li></Link>
-            <Link to="/news"><li className="header-navigation-listitem-small">News + Blog</li></Link>
             <Link to="/pricing"><li className="header-navigation-listitem-small">Pricing</li></Link>
+            <Link to="/news"><li className="header-navigation-listitem-small">News + Blog</li></Link>
+            <Link to="/getbinovi"><li className="header-navigation-listitem-small">Get Binovi</li></Link>
             <Link to="/providers"><li className="header-navigation-listitem-small">Providers</li></Link>
             <Link to="/contact"><li className="header-navigation-listitem-small">Contact Us</li></Link>
           </ul>

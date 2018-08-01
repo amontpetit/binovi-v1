@@ -6,10 +6,10 @@ import MosaicDivider from '../components/mosaicdivider.js';
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div>
+    <div className="blog-wrapper lightbg">
       <section className="blog-page">
         <div className="card">
-          <div className="container">
+          <div className="container space-bottom-huge">
             <h2 className="title">{post.frontmatter.title}</h2>
             <MosaicDivider />
             <div className="blog-sidebar">
@@ -31,9 +31,9 @@ export default ({ data }) => {
               <div dangerouslySetInnerHTML = {{ __html: post.html }}/>
             </div>
           </div>
+          <MosaicDivider />
         </div>
       </section>
-      <MosaicDivider />
     </div>
   );
 };

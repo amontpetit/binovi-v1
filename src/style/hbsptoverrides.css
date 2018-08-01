@@ -7,6 +7,10 @@ div.input{
 }
 .hs-input{
     width:100% !important;
+    height:32px !important;
+    padding:0 4px;
+    color:var(--eyc-midgrey);
+    font-size:16px;
 }
 input[type=checkbox].hs-input{
     margin-right:8px;
@@ -78,7 +82,7 @@ footer .hs-form-field{
     padding:0;
 }
 footer .actions{
-    padding:0 0 32px 0;
+    padding:0;
 }
 
 @media screen and (max-width:480px)
